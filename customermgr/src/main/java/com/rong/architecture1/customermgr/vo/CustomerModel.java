@@ -1,14 +1,18 @@
 package com.rong.architecture1.customermgr.vo;
 
 
-public class CustomerModel {
+import com.rong.architechture1.common.vo.BaseModel;
+
+import java.io.Serializable;
+
+public class CustomerModel extends BaseModel implements Serializable{
 	
 	private String customerId;
 	private String pwd;
 	private String showName;
 	private String trueName;
 	private String registerTime;
-	
+
 	public String getCustomerId() {
 		return customerId;
 	}
@@ -40,6 +44,15 @@ public class CustomerModel {
 		this.registerTime = registerTime;
 	}
 
-
-	
+	@Override
+	public String toString() {
+		return "CustomerModel{" +
+				"customerId='" + customerId + '\'' +
+				", pwd='" + pwd + '\'' +
+				", showName='" + showName + '\'' +
+				", trueName='" + trueName + '\'' +
+				", registerTime='" + registerTime + '\'' +
+				", uuid='" + getUuid() + '\'' +
+				'}';
+	}
 }
