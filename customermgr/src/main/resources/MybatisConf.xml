@@ -6,7 +6,7 @@
 		<typeAlias type="com.rong.architecture1.customermgr.vo.CustomerQueryModel" alias="CQM"/>
 	</typeAliases>
 	<plugins>
-		<plugin interceptor="com.rong.pageUtil.PagePlugin">
+		<plugin interceptor="com.rong.pageutil.PagePlugin">
 			<property name="dialect" value="mysql"/>
 			<property name="pageSqlId" value=".*Page.*"/>
 		</plugin>

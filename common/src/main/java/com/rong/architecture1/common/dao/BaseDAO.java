@@ -1,10 +1,11 @@
-package com.rong.architechture1.common.dao;
+package com.rong.architecture1.common.dao;
 
 import java.util.List;
 
-public interface BaseDAO<M,QM>{
 
-    public void create(M m);
+public interface BaseDAO<M,QM>{
+	
+	public void create(M m);
 	public void update(M m);
 	public void delete(int uuid);
 	

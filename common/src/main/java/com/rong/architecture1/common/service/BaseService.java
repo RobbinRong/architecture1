@@ -1,14 +1,13 @@
-package com.rong.architechture1.common.service;
-
-import com.rong.architechture1.common.dao.BaseDAO;
-import com.rong.architechture1.common.vo.BaseModel;
-import com.rong.pageUtil.Page;
+package com.rong.architecture1.common.service;
 
 import java.util.List;
 
+import com.rong.architecture1.common.dao.BaseDAO;
+import com.rong.architecture1.common.vo.BaseModel;
+import com.rong.pageutil.Page;
 
 
-public class BaseService<M, QM extends BaseModel> implements com.rong.architechture1.common.service.IBaseService<M,QM> {
+public class BaseService<M, QM extends BaseModel> implements IBaseService<M,QM> {
 	private BaseDAO dao = null;
 	public void setDAO(BaseDAO dao){
 		this.dao = dao;

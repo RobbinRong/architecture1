@@ -1,7 +1,6 @@
-package com.rong.architechture1.common.vo;
+package com.rong.architecture1.common.vo;
 
-
-import com.rong.pageUtil.Page;
+import com.rong.pageutil.Page;
 
 public class BaseModel implements java.io.Serializable{
 	

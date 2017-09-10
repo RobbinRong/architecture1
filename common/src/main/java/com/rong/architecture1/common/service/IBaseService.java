@@ -1,8 +1,8 @@
-package com.rong.architechture1.common.service;
+package com.rong.architecture1.common.service;
 
+import com.rong.architecture1.common.vo.BaseModel;
+import com.rong.pageutil.Page;
 
-import com.rong.architechture1.common.vo.BaseModel;
-import com.rong.pageUtil.Page;
 
 public interface IBaseService<M,QM extends BaseModel> {
 	public void create(M m);
